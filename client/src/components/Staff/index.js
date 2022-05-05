@@ -2,8 +2,8 @@ import React from "react";
 
 function staff() {
     return (
-        <div></div>
-    )
+        <div><p>test</p></div>
+    );
 }
 
 export default staff;

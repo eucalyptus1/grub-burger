@@ -1,36 +1,44 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
-function Nav( { currentPage, handlePageChange }) {
+function Nav() {
     return (
         <header>
+            <h1>Grub Burger</h1>
             <nav>
-                <ul className="flex-row">
+            <Link to="/home">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/staff">Staff</Link>
+            <Link to="/login">Login</Link>
+            <Link to="/cart">Cart</Link>
+            
+                {/* <ul className="flex-row">
                     <li>
-                        <a href="#home" onClick={() => handlePageChange('home')}>
+                        <a href="#Home">
                             Home
                         </a>
                     </li>
                     <li>
-                        <a href="#about" onClick={() => handlePageChange('about')}>
+                        <a href="#About">
                             About Us
                         </a>
                     </li>
                     <li>
-                        <a href="#staff" onClick={() => handlePageChange('staff')}>
+                        <a href="#Staff">
                             Staff
                         </a>
                     </li>
                     <li>
-                        <a href="#login" onClick={() => handlePageChange('login')}>
+                        <a href="#Login">
                             Login
                         </a>
                     </li>
                     <li>
-                        <a href="#cart" onClick={() => handlePageChange('cart')}>
+                        <a href="#Cart">
                             Cart
                         </a>
                     </li>
-                </ul>
+                </ul> */}
             </nav>
         </header>
     );
