@@ -21,4 +21,5 @@ const foodSchema = new Schema({
   },
 });
 
+
 module.exports = foodSchema;
