@@ -38,14 +38,25 @@ const resolvers = {
             if (context.user) {
                 const updatedUser = await User.findOneAndUpdate(
                     { _id: context.user._id },
-                    { $addToSet: { savedBooks: input } },
+                    { $addToSet: { orderHistory: input } },
                     { new: true, runValidators: true }
                 );
                 return updatedUser;
             }
             throw new AuthenticationError("You need too be logged in!");
         },
-    }
-}
+        removeOrder: async (parent, { bookId }, context) => {
+            if (context.user) {
+                const updatedUser = await User.findByIdAndUpdate(
+                    { _id: context.user._id },
+                    { $pull: { orderHistory: { foodId: foodId } } },
+                    { new: true }
+                );
+                return updatedUser;
+            }
+            throw new AuthenticationError("You need to be logged in!");
+        },
+    },
+};
 
 module.exports = resolvers;
