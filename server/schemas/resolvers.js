@@ -45,7 +45,7 @@ const resolvers = {
             }
             throw new AuthenticationError("You need too be logged in!");
         },
-        removeOrder: async (parent, { bookId }, context) => {
+        removeOrder: async (parent, { foodId }, context) => {
             if (context.user) {
                 const updatedUser = await User.findByIdAndUpdate(
                     { _id: context.user._id },
