@@ -2,8 +2,6 @@ const { AuthenticationError } = require('apollo-server-express');
 const User = require('../models');
 const { signToken } = require("../utils/auth");
 
-
-
 const resolvers = {
     Query: {
         me: async (parent, args, context) => {
@@ -15,11 +13,15 @@ const resolvers = {
             }
             throw new AuthenticationError('Not logged In!');
         },
+        user: async () => {
+            return User.find()
+            .select('-__v -password');
+        }
     },
 
     Mutation: {
         login: async (parent, { email, password }) => {
-            const user = await User.findOneJ({ email });
+            const user = await User.findOne({ email });
             // check if user exists with email and credentials
             if (!user) {
                 throw new AuthenticationError("Incorrect credentials");
@@ -44,7 +46,7 @@ const resolvers = {
             if (context.user) {
                 const updatedUser = await User.findOneAndUpdate(
                     { _id: context.user._id },
-                    { $addToSet: { orderHistory: input } },
+                    { $push: { orderHistory: input } },
                     { new: true, runValidators: true }
                 );
                 return updatedUser;
