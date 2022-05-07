@@ -34,6 +34,17 @@ const resolvers = {
 
             return { token, user };
         },
+        placeOrder: async (parent, { input }, context) => {
+            if (context.user) {
+                const updatedUser = await User.findOneAndUpdate(
+                    { _id: context.user._id },
+                    { $addToSet: { savedBooks: input } },
+                    { new: true, runValidators: true }
+                );
+                return updatedUser;
+            }
+            throw new AuthenticationError("You need too be logged in!");
+        },
     }
 }
 
