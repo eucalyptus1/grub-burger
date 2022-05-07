@@ -48,9 +48,9 @@ userSchema.methods.isCorrectPassword = async function (password) {
 };
 
 // when we query a user, we'll also get another field that hopefully shows order history
-userSchema.virtual('orderHistory').get(function () {
-  return this.orderHistory.length;
-});
+// userSchema.virtual('orderHistory').get(function () {
+//   return this.orderHistory.length;
+// });
 
 const User = model('User', userSchema);
 
