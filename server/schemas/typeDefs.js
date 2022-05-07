@@ -26,7 +26,7 @@ const typeDefs = gql`
     }
 
     type Query {
-        user: User
+        me: User
     }
 
     input FoodInput {
