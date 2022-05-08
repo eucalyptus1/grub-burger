@@ -7,6 +7,73 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* test */
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #1B1A25;
+  padding: 20px 35px;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 40px;
+  color: #D6D6DA;
+  margin: 0;
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  font-size: 1.55vw;;
+  color: #D6D6DA;
+}
+/* test */
+
+main {
+	margin: 0 auto;
+	max-width: 90%;
+  padding: 50px 30px;
+}
+
+.slideShow {
+  width: 700px;
+    height: 400px;;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slide {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+
+li {
+  list-style: none;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
