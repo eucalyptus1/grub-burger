@@ -1,9 +1,6 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
 
-// import schema from Book.js
-const orderSchema = require('./Order');
-
 const userSchema = new Schema(
   {
     username: {
@@ -21,13 +18,19 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
-    // set savedBooks to be an array of data that adheres to the bookSchema
-    orderHistory: [orderSchema],
+    // set orderHistory to orderSchema to save past orders
+    orderHistory: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'Order'
+      }
+    ],
   },
   // set this to use virtual below
   {
     toJSON: {
       virtuals: true,
+      getters: true
     },
   }
 );

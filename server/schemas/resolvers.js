@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const User = require('../models');
+const { User, Order } = require('../models');
 const { signToken } = require("../utils/auth");
 
 const resolvers = {
@@ -13,13 +13,19 @@ const resolvers = {
             }
             throw new AuthenticationError('Not logged In!');
         },
-        user: async () => {
+        users: async () => {
             return User.find()
             .select('-__v -password');
         }
     },
 
     Mutation: {
+        addUser: async (parent, args) => {
+            const user = await User.create(args);
+            const token = signToken(user);
+            console.log(user);
+            return { token, user };
+        },
         login: async (parent, { email, password }) => {
             const user = await User.findOne({ email });
             // check if user exists with email and credentials
@@ -36,34 +42,29 @@ const resolvers = {
             const token = signToken(user);
             return { token, user };
         },
-        addUser: async (parent, args) => {
-            const user = await User.create(args);
-            const token = signToken(user);
-
-            return { token, user };
-        },
-        placeOrder: async (parent, { input }, context) => {
-            if (context.user) {
-                const updatedUser = await User.findOneAndUpdate(
-                    { _id: context.user._id },
-                    { $push: { orderHistory: input } },
-                    { new: true, runValidators: true }
-                );
-                return updatedUser;
-            }
-            throw new AuthenticationError("You need too be logged in!");
-        },
-        removeOrder: async (parent, { foodId }, context) => {
-            if (context.user) {
-                const updatedUser = await User.findByIdAndUpdate(
-                    { _id: context.user._id },
-                    { $pull: { orderHistory: { foodId: foodId } } },
-                    { new: true }
-                );
-                return updatedUser;
-            }
-            throw new AuthenticationError("You need to be logged in!");
-        },
+        
+        // placeOrder: async (parent, { input }, context) => {
+        //     if (context.user) {
+        //         const updatedUser = await User.findOneAndUpdate(
+        //             { _id: context.user._id },
+        //             { $push: { orderHistory: input } },
+        //             { new: true, runValidators: true }
+        //         );
+        //         return updatedUser;
+        //     }
+        //     throw new AuthenticationError("You need too be logged in!");
+        // },
+        // removeOrder: async (parent, { foodId }, context) => {
+        //     if (context.user) {
+        //         const updatedUser = await User.findByIdAndUpdate(
+        //             { _id: context.user._id },
+        //             { $pull: { orderHistory: { foodId: foodId } } },
+        //             { new: true }
+        //         );
+        //         return updatedUser;
+        //     }
+        //     throw new AuthenticationError("You need to be logged in!");
+        // },
     },
 };
 

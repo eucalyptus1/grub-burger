@@ -17,7 +17,6 @@ const typeDefs = gql`
         username: String
         email: String
         order: Int
-
     }
 
     type Auth {
@@ -27,7 +26,7 @@ const typeDefs = gql`
 
     type Query {
         me: User
-        user: User
+        users: [User]
     }
 
     input FoodInput {
