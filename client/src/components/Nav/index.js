@@ -1,16 +1,20 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Navbar, Container, Nav, NavbarBrand} from "react-bootstrap"
 
-function Nav() {
+function Navigation({currentPage, handlePageChange }) {
     return (
-        <header>
-            <h1>Grub Burger</h1>
-            <nav>
-            <Link to="/home">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/staff">Staff</Link>
-            <Link to="/login">Login</Link>
-            <Link to="/cart">Cart</Link>
+        <Navbar>
+           <Container>
+               <Navbar.Brand>Grub Burger</Navbar.Brand>
+               <Navbar.Toggle></Navbar.Toggle>
+               
+               </Container> 
+        </Navbar>
+    )
+}
+
+
+
             
                 {/* <ul className="flex-row">
                     <li>
@@ -39,9 +43,6 @@ function Nav() {
                         </a>
                     </li>
                 </ul> */}
-            </nav>
-        </header>
-    );
-}
+     
 
-export default Nav;
+export default Navigation;
