@@ -19,12 +19,17 @@ const foodSchema = new Schema({
   price: {
     type: String,
   },
-},
-{
-  toJSON: {
-    getters: true,
+  quantity: {
+    type: Number,
+    min: 0,
+    default: 0
   }
-});
+},
+  {
+    toJSON: {
+      getters: true,
+    }
+  });
 
 
 module.exports = foodSchema;
