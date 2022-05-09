@@ -1,64 +1,77 @@
 import React from "react";
+import { Card, Container, Row, Col, ListGroup, ListGroupItem, Button} from "react-bootstrap";
+import "./menu.css"
+import fish from "../../assets/entrees/fish-sandwich.jpg"
+import angus from "../../assets/entrees/angus-burger.jpeg"
+import mushroom from "../../assets/entrees/mushroom-burger.jpg"
+
 
 function Entrees() {
     return (
-        <div>
-            <p>Fish Sandwich
-                On salted rye, grilled or fried Mahi Mahi
-                with lettuce, tomato, and smoked tartar
-                sauce
-                $12
-            </p>
-            <p>
-                Meatball Sandwich
-                On a fresh baked baguette, beef and
-                pork meatballs, marinara, and shredded
-                mozzarella
-                $9
-            </p>
-            <p>
-                Cheesesteak Sandwich
-                On a fresh baked baquette, ribeye
-                steak, onions, green peppers, and
-                shredded mozzarella
-                $11
-            </p>
-            <p>
-                Angus Hamburger
-                On a fresh baked bun, half pound of
-                angus beef, with lettuce, tomato, and
-                your choice of cheddar or swiss cheese
-                $9
-            </p>
-            <p>
-                Mushroom and Swiss Burger
-                On a fresh baked bun, half pound of
-                angus beef topped with sauteed
-                mushrooms, swiss cheese, lettuce
-                and tomato
-                $10
-            </p>
-            <p>
-                Grub Burger
-                It's literally a burger made of grubs
-                $45
-            </p>
-            <p>
-                Western Burger
-                On a fresh baked bun, half pound of
-                angus beef topped with bacon, BBQ
-                sauce, and cheddar cheese
-                $10
-            </p>
-            <p>
-                Black and Bleu Burger
-                On a fresh baked bun, half pound of
-                angus beef blackened and topped
-                with bleu cheese crumbles,
-                lettuce, and tomato
-                $10
-            </p>
-        </div>
+      
+        <Container>
+            <div className="text-center">
+                <h1>Entrees</h1>
+            </div>
+            <Row>
+                <Col className="container-fluid d-flex justify-content-center">
+                    <Card border="dark" style={{ width: "18rem "}}>
+                            <Card.Img
+                                variant="top"
+                                src={fish}
+                                style={{width:"17.9rem", height:"14rem"}}
+                            />
+                            <Card.Body>
+                                <Card.Title className="text-center">Fish Sandwich</Card.Title>
+                                <Card.Text> On salted rye, grilled or fried Mahi Mahi with lettuce, 
+                                    tomato, and smoked tartar sauce </Card.Text>
+                            </Card.Body>
+                            <ListGroup className="list-group-flush">
+                                <ListGroupItem className="text-center ">$12</ListGroupItem>
+                            </ListGroup>
+                            <Button variant="dark">Add to cart</Button>
+                       
+                    </Card>
+
+            <Card border="dark" style={{ width: "18rem "}}>
+                    <Card.Img
+                        variant="top"
+                        src={angus}
+                        style={{width:"17.9rem", height:"14rem"}}
+                    />
+                        <Card.Body>
+                            <Card.Title className="text-center">Angus Hamburger</Card.Title>
+                                <Card.Text>On a fresh baked bun, half pound of angus beef, with lettuce, tomato, and
+                                    your choice of cheddar or swiss cheese</Card.Text>
+                          </Card.Body>
+                            <ListGroup className="list-group-flush">
+                                <ListGroupItem className="text-center">$9</ListGroupItem>
+                            </ListGroup>
+                            <Button variant="dark">Add to cart</Button>     
+                    </Card>
+
+        <Card border="dark" style={{ width: "18rem "}}>
+          <Card.Img
+                variant="top"
+                 src={mushroom}
+                 style={{width:"17.9rem", height:"14rem"}}
+              />
+               <Card.Body>
+                    <Card.Title className="text-center">Mushroom and Swiss Burger</Card.Title>
+                        <Card.Text> On a fresh baked bun, half pound of angus beef topped with sauteed
+                mushrooms, swiss cheese, lettuce and tomato</Card.Text>
+                          </Card.Body>
+                            <ListGroup className="list-group-flush">
+                                <ListGroupItem className="text-center">$10</ListGroupItem>
+                            </ListGroup>
+                            <Button variant="dark">Add to cart</Button>
+                    </Card>
+            
+
+                </Col>
+            </Row>
+        </Container>
+
     );
 }
 
