@@ -17,13 +17,29 @@ function Desserts() {
                     style={{ width: "16.9rem", height:"14rem" }}
                 />
                 <Card.Body>
-                    <Card.Title className="text-center"></Card.Title>
-                    <Card.Text></Card.Text>
+                    <Card.Title className="text-center">Milk Shake</Card.Title>
+                    <Card.Text>Handcrafted milkshake of your choice: Vanilla, Chocolate, Strawberry, Oreo</Card.Text>
                 </Card.Body>
                 <ListGroup className="list-group-flush">
                     <ListGroupItem className="text-center"></ListGroupItem>
                 </ListGroup>
-                <Button variant="dark"></Button>
+                <Button variant="dark">Add to cart</Button>
+            </Card>
+
+            <Card className="p-2" border="dark" style={{ width: "18rem" }}>
+                <Card.Img
+                    variant="top"
+                    src={pic}
+                    style={{ width: "16.9rem", height:"14rem" }}
+                />
+                <Card.Body>
+                    <Card.Title className="text-center">Brownie Sundae</Card.Title>
+                    <Card.Text>Vanilla ice cream with delicious chocolate brownie toped with chocolate syrup.</Card.Text>
+                </Card.Body>
+                <ListGroup className="list-group-flush">
+                    <ListGroupItem className="text-center"></ListGroupItem>
+                </ListGroup>
+                <Button variant="dark">Add to cart</Button>
             </Card>
 
             <Card className="p-2" border="dark" style={{ width: "18rem" }}>
@@ -39,23 +55,7 @@ function Desserts() {
                 <ListGroup className="list-group-flush">
                     <ListGroupItem className="text-center"></ListGroupItem>
                 </ListGroup>
-                <Button variant="dark"></Button>
-            </Card>
-
-            <Card className="p-2" border="dark" style={{ width: "18rem" }}>
-                <Card.Img
-                    variant="top"
-                    src={pic}
-                    style={{ width: "16.9rem", height:"14rem" }}
-                />
-                <Card.Body>
-                    <Card.Title className="text-center"></Card.Title>
-                    <Card.Text></Card.Text>
-                </Card.Body>
-                <ListGroup className="list-group-flush">
-                    <ListGroupItem className="text-center"></ListGroupItem>
-                </ListGroup>
-                <Button variant="dark"></Button>
+                <Button variant="dark">Add to cart</Button>
             </Card>
 
         </Col>

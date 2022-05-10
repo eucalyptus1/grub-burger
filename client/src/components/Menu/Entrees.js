@@ -6,6 +6,7 @@ import angus from "../../assets/entrees/angus-burger.jpeg"
 import mushroom from "../../assets/entrees/mushroom-burger.jpg"
 import bleu from "../../assets/entrees/bleu-burger.jpg"
 import cheese from "../../assets/entrees/phillys.webp"
+import meatball from "../../assets/entrees/meatball-sub.jpg"
 
 
 function Entrees() {
@@ -77,7 +78,7 @@ function Entrees() {
                             style={{ width: "16.9rem", height: "14rem" }}
                         />
                         <Card.Body>
-                            <Card.Title className="text-center">Black and Bleu Burger</Card.Title>
+                            <Card.Title className="text-center">Black and Bleu Cheese Burger</Card.Title>
                             <Card.Text> On a fresh baked bun, half pound of angus beef blackened and topped with bleu cheese crumbles,
                                 lettuce, and tomato</Card.Text>
                         </Card.Body>
@@ -93,7 +94,7 @@ function Entrees() {
 
              <Row>
 
-                <Col className="container-fluid d-flex justify-content-center g-4">
+                <Col className="container-fluid d-flex justify-content-center g-4 card-columns">
                     <Card className="p-2" border="dark" style={{ width: "18rem " }}>
                         <Card.Img
                             variant="top"
@@ -110,6 +111,24 @@ function Entrees() {
                         </ListGroup>
                         <Button variant="dark">Add to cart</Button>
                     </Card>
+
+                    <Card className="p-2" border="dark" style={{ width: "18rem " }}>
+                        <Card.Img
+                            variant="top"
+                            src={meatball}
+                            style={{ width: "16.9rem", height: "14rem" }}
+                        />
+                        <Card.Body>
+                            <Card.Title className="text-center">Meatball Sandwich</Card.Title>
+                            <Card.Text> On a fresh baked baquette, beef and pork meatballs, marinara, and shredded mozzarella</Card.Text>
+                        </Card.Body>
+                        <ListGroup className="list-group-flush">
+                            <ListGroupItem className="text-center">$9</ListGroupItem>
+                        </ListGroup>
+                        <Button variant="dark">Add to cart</Button>
+                    </Card>
+
+                
 
 
                 </Col>

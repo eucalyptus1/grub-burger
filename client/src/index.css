@@ -16,6 +16,10 @@ header {
   padding: 20px 35px;
 }
 
+a {
+  color: #D6D6DA; 
+}
+
 header h1 {
   font-weight: bold;
   font-size: 40px;
