@@ -9,10 +9,8 @@ import Menu from '../Menu';
 function Home() {
 
   return (
-      <div>
+      <div className='flex-row'>
         <DisplayBox image={ImageData}/>
-      </div>,
-      <div>
        <Menu/>
       </div>
   );
