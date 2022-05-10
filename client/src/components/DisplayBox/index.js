@@ -23,14 +23,12 @@ const DisplayBox = ({ image }) => {
     }, [currentImage, image.length])
 
     return (
-        <section>
-        {/* {ImageData.map((image, index) => {
-            return( */}
+        <section className="slideSection">
             <div className="slideShow">
             <img src={image[currentImage]} alt="burger" className="slide" />
             </div>
-      
         </section>
+        
     );
   }
 
