@@ -1,3 +1,4 @@
-.card-container {
-    
+.card-columns {
+    column-gap: 2rem;
 }
+
