@@ -9,14 +9,19 @@ const typeDefs = gql`
         name: String
         price: String
         image: String
-
+        quantity: Int
+    }
+    type Order {
+        orderNumber: String
+        orderPrice: String
+        orderFood: [Food]
     }
 
     type User {
         _id: ID
         username: String
         email: String
-        order: Int
+        orders: [Order]
     }
 
     type Auth {
