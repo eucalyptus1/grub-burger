@@ -12,9 +12,9 @@ const typeDefs = gql`
         quantity: Int
     }
     type Order {
-        orderNumber: String
+        orderNumber: ID
         orderPrice: String
-        orderFood: [Food]
+        orderFood: Food
     }
 
     type User {
@@ -34,19 +34,11 @@ const typeDefs = gql`
         users: [User]
     }
 
-    input FoodInput {
-        foodId: ID!
-        description: String
-        name: String
-        price: String
-        image: String
-    }
-
     type Mutation {
         login(email: String!, password: String!): Auth
         addUser(username: String!, email: String!, password: String!): Auth
-        placeOrder(foodInput: FoodInput): User
-        removeOrder(foodId: ID): User
+        placeOrder(name: String, description: String, price: String, quantity: Int): Order 
+        removeOrder(foodId: ID): Order
     }
     `
 
