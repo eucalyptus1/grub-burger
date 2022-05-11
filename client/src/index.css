@@ -20,13 +20,14 @@ header h1 {
   font-family: 'Shadows Into Light', cursive;
   font-weight: bold;
   font-size: 40px;
-  color: #D6D6DA;
+  color: white;
   margin: 0;
 }
 
 header nav {
   font-family: 'Shadows Into Light', cursive;
   margin: 7px 0;
+  color: white;
 }
 
 header nav ul {
@@ -36,12 +37,13 @@ header nav ul {
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  color: white;
 }
 
 header nav ul li a {
   padding: 10px 15px;
   font-size: 1.55vw;;
-  color: #D6D6DA;
+  color: white;
 }
 /* test */
 
