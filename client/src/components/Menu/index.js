@@ -69,7 +69,7 @@ function Menu() {
         ))}
       </ul>
 
-      <div className="container-fluid d-flex flex-row justify content-center card-columns mt-4">
+      <div className="container-fluid d-flex flex-row justify content-center card-columns">
         {currentMenu.map((data) => (
 
           <Row>
@@ -84,10 +84,10 @@ function Menu() {
                 <Card.Title className="text-center">{data.name}</Card.Title>
                 <Card.Text>{data.description}</Card.Text>
               </Card.Body>
-              <ListGroup className="list-group-flush ">
+              <ListGroup className="list-group-flush">
                 <ListGroupItem className="text-center ">{data.price}</ListGroupItem>
               </ListGroup>
-              <Button className="mt-3" variant="dark">Add to cart</Button>
+              <Button variant="dark">Add to cart</Button>
 
             </Card>
           </Row>

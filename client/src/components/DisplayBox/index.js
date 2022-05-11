@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
-// import { ImageData } from "./ImageData";
+import { Carousel } from "react-bootstrap";
+import { ImageData } from "./ImageData";
+
+
 
 
 const DisplayBox = ({ image }) => {
@@ -23,9 +26,9 @@ const DisplayBox = ({ image }) => {
     }, [currentImage, image.length])
 
     return (
-        <section className="slideSection">
-            <div className="slideShow block-example border border-left-0 border-dark">
-            <img src={image[currentImage]} alt="food" className="slide" />
+        <section >
+            <div className="slideShow justify content-center">
+            <img src={image[currentImage]} style={{ width:"500px", height:"500px"}} alt="food" className="slide" />
             </div>
         </section>
         

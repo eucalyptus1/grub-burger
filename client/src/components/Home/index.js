@@ -10,7 +10,7 @@ function Home() {
 
   return (
       <div className='container'>
-        <DisplayBox image={ImageData}/>
+        <DisplayBox image={ImageData}/> 
        <Menu/>
       </div>
   );
