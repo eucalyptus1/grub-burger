@@ -30,8 +30,8 @@ function Home() {
             src={image2}
             />
             <Carousel.Caption>
-              <h1>Fried Oreos</h1>
-              <h3>$4</h3>
+              <h1 className='text-dark'>Fried Oreos</h1>
+              <h3 className='text-dark'>$4</h3>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
