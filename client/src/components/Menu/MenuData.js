@@ -72,9 +72,9 @@ export const appetizers = [
 
         category: "appetizers",
 
-        name: "Hot Pretzel Sticks",
+        name: "Mozzarella Sticks",
 
-        description: "Six fresh made pretzel sticks served with house made dijon cheese dip",
+        description: "Six fresh made mozarella sticks served with house made marinada dip",
 
         price: "$6"
     }

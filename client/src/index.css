@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Shadows Into Light', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,14 +8,16 @@ body {
 
 /* test */
 header {
+  font-family: 'Shadows Into Light', cursive;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: #1B1A25;
+  background-color: #606C38;
   padding: 20px 35px;
 }
 
 header h1 {
+  font-family: 'Shadows Into Light', cursive;
   font-weight: bold;
   font-size: 40px;
   color: #D6D6DA;
@@ -25,10 +25,12 @@ header h1 {
 }
 
 header nav {
+  font-family: 'Shadows Into Light', cursive;
   margin: 7px 0;
 }
 
 header nav ul {
+  font-family: 'Shadows Into Light', cursive;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -50,8 +52,10 @@ main {
 }
 
 .slideShow {
-  width: 400px;
-  height: 400px;
+  width: 1000px;
+  height: 500px;
+  position: relative;
+  justify-content: center;
   display: flex;
   overflow-x: hidden;
 }
@@ -64,6 +68,7 @@ main {
 
 
 li {
+ 
   list-style: none;
 }
 
@@ -75,6 +80,18 @@ li {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Shadows Into Light', cursive;
+ 
+}
+
+h1{
+  font-family: 'Shadows Into Light', cursive;
+  color: white;
+  font-weight: bolder;
+}
+
+ul {
+  font-family: 'Shadows Into Light', cursive;
+  color: white;
+  font-weight: bolder;
 }

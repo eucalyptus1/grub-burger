@@ -1,8 +1,8 @@
-import Image1 from "../../assets/images/burger.jpg";
-import Image2 from "../../assets/images/wings.jpg";
-import Image3 from "../../assets/images/creme.jpg";
-import Image4 from "../../assets/images/drinks.jpg";
-import Image5 from "../../assets/images/orange.webp";
+import Image1 from "../../assets/appetizers/chicken-wings.jpeg";
+import Image2 from "../../assets/drinks/sweet-tea.jpg";
+import Image3 from "../../assets/desserts/fried-oreos.webp";
+import Image4 from "../../assets/drinks/passion-fruit.jpg";
+import Image5 from "../../assets/entrees/angus-burger.jpeg";
 
 export const ImageData = [
     Image1,
