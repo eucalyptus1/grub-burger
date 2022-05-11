@@ -12,7 +12,11 @@
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "jwt-decode": "^2.2.0",
+    "@apollo/client": "^3.6.1",
+    "@apollo/react-hooks": "^4.0.0",
+    "graphql": "^16.4.0"
   },
   "scripts": {
     "start": "react-scripts start",

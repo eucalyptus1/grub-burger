@@ -6,12 +6,8 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Login from './components/Login';
 import Cart from './components/Cart';
-import Register from './components/Signup/SignupForm';
-import Appetizers from './components/Menu/Appetizers';
-import Entrees from './components/Menu/Entrees';
-import Desserts from './components/Menu/Desserts';
-import Drinks from './components/Menu/Drinks';
-import SignupForm from './components/Signup/SignupForm';
+import SignupForm from './components/Signup';
+import Menu from './components/Menu'
 
 const App = () => {
   return (
@@ -29,10 +25,6 @@ const App = () => {
               element={<About />}
             />
             <Route
-              path="/staff"
-              element={<Staff />}
-            />
-            <Route
               path="/login"
               element={<Login />}
             />
@@ -47,22 +39,6 @@ const App = () => {
             <Route
               path="/menu"
               element={<Menu />}
-            />
-            <Route
-              path="/appetizers"
-              element={<Appetizers />}
-            />
-            <Route
-              path="/entrees"
-              element={<Entrees />}
-            />
-            <Route
-              path="/desserts"
-              element={<Desserts />}
-            />
-            <Route
-              path="/drinks"
-              element={<Drinks />}
             />
           </Routes>
         </div>
