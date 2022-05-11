@@ -98,3 +98,24 @@ ul {
   color: white;
   font-weight: bolder;
 }
+
+.carousel {
+  width:740px;
+  height:460px;
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.item {
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-caption {
+  text-align: right;
+  
+}
