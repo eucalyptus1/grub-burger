@@ -12,6 +12,7 @@ function Nav() {
                     <li><Link to="/about">About</Link></li>
                     <li><Link to="/login">Login</Link></li>
                     <li><Link to="/cart">Cart</Link></li>
+                    <li><Link to="/signup">Register</Link></li>
                 </ul>
             </nav>
         </header>
