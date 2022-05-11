@@ -35,7 +35,7 @@ function Appetizers() {
                 <Card className="p-2" border="dark" style={{ width: "18rem" }}>
                     <Card.Img
                         variant="top"
-                        src={buffalo}
+                        src={shrimp}
                         style={{ width: "16.9rem", height:"14rem" }}
                     />
                     <Card.Body>
@@ -51,7 +51,7 @@ function Appetizers() {
                 <Card className="p-2" border="dark" style={{ width: "18rem" }}>
                     <Card.Img
                         variant="top"
-                        src={shrimp}
+                        src={wings}
                         style={{ width: "16.9rem", height:"14rem" }}
                     />
                     <Card.Body>
@@ -73,7 +73,7 @@ function Appetizers() {
             <Card className="p-2" border="dark" style={{ width: "18rem" }}>
                     <Card.Img
                         variant="top"
-                        src={wings}
+                        src={bites}
                         style={{ width: "16.9rem", height:"14rem" }}
                     />
                     <Card.Body>
