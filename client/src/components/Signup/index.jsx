@@ -2,15 +2,10 @@ import React, { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
 
 // import mutations to use
-import { ApolloProvider, ApolloClient, useMutation, InMemoryCache } from '@apollo/client';
+import { useMutation} from '@apollo/client';
 import { ADD_USER } from '../../utils/mutations';
 import Auth from '../../utils/auth';
 import "../Login/login.css"
-
-const client = new ApolloClient({
-  url: "http://localhost:3000/signup",
-  cache: InMemoryCache()
-})
 
 
 const SignupForm = () => {
@@ -63,7 +58,6 @@ const SignupForm = () => {
   };
 
   return (
-    <ApolloProvider client={client}>
     <section className='m-5'>
       <div className=' bg-brown p-3 square rounded-top'>
         <h3 className='text-center text-light'>Signup Here</h3>
@@ -127,8 +121,6 @@ const SignupForm = () => {
         {error}
       </div>
     </section>
-    </ApolloProvider>
-
   );
 };
 
