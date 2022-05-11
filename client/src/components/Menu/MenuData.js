@@ -1,5 +1,31 @@
+import appImage1 from "../../assets/appetizers/buffalo-chicken.jpeg"
+import appImage2 from "../../assets/appetizers/grilled-shrimp.webp"
+import appImage3 from "../../assets/appetizers/chicken-wings.jpeg"
+import appImage4 from "../../assets/appetizers/pepper-bites.jpeg"
+import appImage5 from "../../assets/appetizers/Cheese-Sticks-SpendWithPennies-2-22.jpeg"
+import entImage1 from "../../assets/entrees/fish-sandwich.jpg"
+import entImage2 from "../../assets/entrees/angus-burger.jpeg"
+import entImage3 from "../../assets/entrees/mushroom-burger.jpg"
+import entImage4 from "../../assets/entrees/bleu-burger.jpg"
+import entImage5 from "../../assets/entrees/phillys.webp"
+import entImage6 from "../../assets/entrees/meatball-sub.jpg"
+import desImage1 from "../../assets/desserts/apple-pie.webp"
+import desImage2 from "../../assets/desserts/brownie-sundae.jpg"
+import desImage3 from "../../assets/desserts/fried-oreos.webp"
+import desImage4 from "../../assets/desserts/milkshake.jpg"
+import desImage5 from "../../assets/desserts/strawberry-cheesecake.jpg"
+import drinkImage1 from "../../assets/drinks/sweet-tea.jpg"
+import drinkImage2 from "../../assets/drinks/lemonade.webp"
+import drinkImage3 from "../../assets/drinks/passion-fruit.jpg"
+import drinkImage4 from "../../assets/drinks/strawberry-marg.jpg"
+import drinkImage5 from "../../assets/drinks/beer.jpg"
+
+
+
 export const appetizers = [
     {
+        img: appImage1,
+
         category: "appetizers",
 
         name: "Buffalo Style Chicken Egg Rolls",
@@ -9,6 +35,8 @@ export const appetizers = [
         price: "$8.50"
     },
     {
+        img: appImage2,
+
         category: "appetizers",
 
         name: "Grilled Shrimp",
@@ -18,6 +46,8 @@ export const appetizers = [
         price: "$8.50"
     },
     {
+        img: appImage3,
+
         category: "appetizers",
 
         name: "Chicken Wings",
@@ -27,166 +57,213 @@ export const appetizers = [
         price: "$8.50"
     },
     {
+        img: appImage4,
+
         category: "appetizers",
 
         name: "Pepperjack Cheese Bites",
 
         description: "Lightly breaded pepperjack cheese served with Ranch dressing",
 
-        price: "$6.00"
+        price: "$6"
     },
     {
+        img: appImage5,
+
         category: "appetizers",
 
         name: "Hot Pretzel Sticks",
 
         description: "Six fresh made pretzel sticks served with house made dijon cheese dip",
 
-        price: "$6.00"
+        price: "$6"
     }
 ]
 
 export const entrees = [
     {
+        img: entImage1,
+
         category: "entrees",
 
-        name: "Mousefood",
+        name: "Fish Sandwich",
 
-        description: "black beans, and smoked gouda served with a blend of hot sauce and bleu cheese crumbles",
+        description: "On salted rye, grilled or fried Mahi Mahi with lettuce, tomato, and smoked tartar sauce",
 
-        price: "$8.50"
+        price: "$12"
     },
     {
+        img: entImage2,
+
         category: "entrees",
 
-        name: "Grilled Shrimp",
+        name: "Angus Hamburger",
 
-        description: "Six shrimp in a chipotle marinade served with chipotle aioli",
+        description: "On a fresh baked bun, half pound of angus beef, with lettuce, tomato, and your choice of cheddar or swiss cheese",
 
-        price: "$8.50"
+        price: "$9"
     },
     {
+        img: entImage3,
+
         category: "entrees",
 
-        name: "Chicken Wings",
+        name: "Mushroom and Swiss Burger",
 
-        description: "Choice of hot, mild, BBQ, or teriyaki sauce served with celery and your choice of bleu cheese or Ranch dressing",
+        description: "On a fresh baked bun, half pound of angus beef topped with sauteed mushrooms, swiss cheese, lettuce and tomato",
 
-        price: "$8.50"
+        price: "$10"
     },
     {
+        img: entImage4,
+
         category: "entrees",
 
-        name: "Pepperjack Cheese Bites",
+        name: "Black and Bleu Cheese Burger",
 
-        description: "Lightly breaded pepperjack cheese served with Ranch dressing",
+        description: "On a fresh baked bun, half pound of angus beef blackened and topped with bleu cheese crumbles, lettuce, and tomato",
 
-        price: "$6.00"
+        price: "$10"
     },
     {
+        img: entImage5,
+
         category: "entrees",
 
-        name: "Hot Pretzel Sticks",
+        name: "Cheesesteak Sandwich",
 
-        description: "Six fresh made pretzel sticks served with house made dijon cheese dip",
+        description: "On a fresh baked baquette, ribeye steak, onions, green peppers, and shredded mozzarella",
 
-        price: "$6.00"
+        price: "$11"
+    },
+    {
+        img: entImage6,
+
+        category: "entrees",
+
+        name: "Meatball Sandwich",
+
+        description: "On a fresh baked baquette, beef and pork meatballs, marinara, and shredded mozzarella",
+
+        price: "$9"
     }
+    
 ]
 
 export const desserts = [
     {
+        img: desImage4,
+
         category: "desserts",
 
-        name: "Buffalo Style Chicken Egg Rolls",
+        name: "Milk Shake",
 
-        description: "black beans, and smoked gouda served with a blend of hot sauce and bleu cheese crumbles",
+        description: "Handcrafted milkshake of your choice: Vanilla, Chocolate, Strawberry, Oreo",
 
-        price: "$8.50"
+        price: "$4"
     },
     {
+        img: desImage2,
+
         category: "desserts",
 
-        name: "Grilled Shrimp",
+        name: "Brownie Sundae",
 
-        description: "Six shrimp in a chipotle marinade served with chipotle aioli",
+        description: "Vanilla ice cream with delicious chocolate brownie toped with chocolate syrup",
 
-        price: "$8.50"
+        price: "$7"
     },
     {
+        img: desImage3,
+
         category: "desserts",
 
-        name: "Chicken Wings",
+        name: "Fried Oreos",
 
-        description: "Choice of hot, mild, BBQ, or teriyaki sauce served with celery and your choice of bleu cheese or Ranch dressing",
+        description: "Deep fried Oreo cookies, a Texas State Fair favorite!",
 
-        price: "$8.50"
+        price: "$7"
     },
     {
+        img: desImage5,
+
         category: "desserts",
 
-        name: "Pepperjack Cheese Bites",
+        name: "Strawberry Cheesecake",
 
-        description: "Lightly breaded pepperjack cheese served with Ranch dressing",
+        description: "Light and creamy cheesecake topped with sweet strawberry sauce",
 
-        price: "$6.00"
+        price: "$7"
     },
     {
+        img: desImage1,
+
         category: "desserts",
 
-        name: "Hot Pretzel Sticks",
+        name: "Apple Pie",
 
-        description: "Six fresh made pretzel sticks served with house made dijon cheese dip",
+        description: "A delicious classic pie filled with apples and topped with a scoop of vanilla ice cream",
 
-        price: "$6.00"
+        price: "$5"
     }
 ]
 
+
 export const drinks = [
     {
+        img: drinkImage1,
+
         category: "drinks",
 
-        name: "Buffalo Style Chicken Egg Rolls",
+        name: "Fresh Brewed Sweet Tea",
 
-        description: "black beans, and smoked gouda served with a blend of hot sauce and bleu cheese crumbles",
+        description: "This delicious sweet tea is freshly brewed each day",
 
-        price: "$8.50"
+        price: "$3"
     },
     {
+        img: drinkImage2,
+
         category: "drinks",
 
-        name: "Grilled Shrimp",
+        name: "Lemonade",
 
-        description: "Six shrimp in a chipotle marinade served with chipotle aioli",
+        description: "Freshly squeezed lemons make a tasty lemonade!",
 
-        price: "$8.50"
+        price: "$3"
     },
     {
+        img: drinkImage3,
+
         category: "drinks",
 
-        name: "Chicken Wings",
+        name: "Passion Fruit Martini",
 
-        description: "Choice of hot, mild, BBQ, or teriyaki sauce served with celery and your choice of bleu cheese or Ranch dressing",
+        description: "Fresh passion fruit, passion fruit juice, and passion fruit flavored vodka",
 
-        price: "$8.50"
+        price: "$8"
     },
     {
+        img: drinkImage4,
+
         category: "drinks",
 
-        name: "Pepperjack Cheese Bites",
+        name: "Frozen Strawberry Margarita",
 
-        description: "Lightly breaded pepperjack cheese served with Ranch dressing",
+        description: "Strawberry, tequila, and salt/sugar on the rim",
 
-        price: "$6.00"
+        price: "$8"
     },
     {
+        img: drinkImage5,
+
         category: "drinks",
 
-        name: "Hot Pretzel Sticks",
+        name: "House Beer",
 
-        description: "Six fresh made pretzel sticks served with house made dijon cheese dip",
+        description: "Enjoy a cold house beer",
 
-        price: "$6.00"
+        price: "$5"
     }
 ];
 

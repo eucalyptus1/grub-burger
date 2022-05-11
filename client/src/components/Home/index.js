@@ -9,7 +9,7 @@ import Menu from '../Menu';
 function Home() {
 
   return (
-      <div className='flex-row'>
+      <div className='container'>
         <DisplayBox image={ImageData}/>
        <Menu/>
       </div>

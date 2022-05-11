@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Card, Container, Row, Col, ListGroup, ListGroupItem, Button } from "react-bootstrap";
 
 import MenuList from './MenuList';
 
@@ -55,10 +56,10 @@ function Menu() {
 
 
   return (
-    <section className="menu-section">
-      <h2>Menu</h2>
+    <Container className="flex-row">
+      <h1>Menu</h1>
       <ul>
-      {list.map((item) => (
+        {list.map((item) => (
           <MenuList
             title={item.title}
             active={currentCategory === item.id}
@@ -66,22 +67,35 @@ function Menu() {
             id={item.id}
           />
         ))}
-        </ul>
+      </ul>
 
-         <div className="current-menu">
+      <div className="current-menu">
         {currentMenu.map((data) => (
-          
-        
-        <div className="item-card">
-        {/* <img src={data.img}/> */}
-        <p>{data.name}</p>
-        <p>{data.description}</p>
-        <p>{data.price}</p>
-        </div>
+
+          <Row xs={1} md={2} className="g-4">
+            <Col className="container-fluid d-flex justify-content-center mt-2 card-columns" />
+            <Card className="p-2" border="dark" style={{ width: "18rem " }}>
+              <Card.Img
+                variant="top"
+                src={data.img}
+                style={{ width: "16.9rem", height: "14rem" }}
+              />
+              <Card.Body>
+                <Card.Title className="text-center">{data.name}</Card.Title>
+                <Card.Text>{data.description}</Card.Text>
+              </Card.Body>
+              <ListGroup className="list-group-flush">
+                <ListGroupItem className="text-center ">{data.price}</ListGroupItem>
+              </ListGroup>
+              <Button variant="dark">Add to cart</Button>
+
+            </Card>
+          </Row>
+
+
         ))}
-        )
       </div>
-    </section>
+    </Container>
   );
 }
 

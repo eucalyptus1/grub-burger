@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { ImageData } from "./ImageData";
+// import { ImageData } from "./ImageData";
 
 
 const DisplayBox = ({ image }) => {
@@ -24,8 +24,8 @@ const DisplayBox = ({ image }) => {
 
     return (
         <section className="slideSection">
-            <div className="slideShow">
-            <img src={image[currentImage]} alt="burger" className="slide" />
+            <div className="slideShow block-example border border-left-0 border-dark">
+            <img src={image[currentImage]} alt="food" className="slide" />
             </div>
         </section>
         

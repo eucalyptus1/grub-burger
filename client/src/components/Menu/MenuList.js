@@ -2,11 +2,11 @@ import React from "react";
 
 function MenuList ({ title, setCurrentCategory, id, active }) {
     return (
-        <li className={active ? "menuList active" : "menuList"}
+        <h2 className={active ? "menuList active" : "menuList"}
    onClick={() => setCurrentCategory(id)}
     >
      {title}
-    </li>
+    </h2>
         
 
     );

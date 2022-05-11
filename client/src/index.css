@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.rowC{display:flex; flex-direction:row;}
 
 /* test */
 header {
@@ -49,18 +50,16 @@ main {
 }
 
 .slideShow {
-    width: 700px;
-    height: 400px;;
-    border-style: solid;
-    border-width: 4px;
-    border-radius: 10px;
-    overflow: hidden;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  overflow-x: hidden;
 }
 
 .slide {
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: cover;
+  width: 400px;
+  flex-shrink: 0;
+  height: 100%;
 }
 
 
