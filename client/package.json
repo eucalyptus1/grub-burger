@@ -15,8 +15,9 @@
     "web-vitals": "^2.1.4",
     "jwt-decode": "^2.2.0",
     "@apollo/client": "^3.6.1",
-    "@apollo/react-hooks": "^4.0.0",
-    "graphql": "^16.4.0"
+    "graphql": "^16.4.0",
+    "graphql-tag": "2.12.6",
+    "@apollo/react-hooks": "4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

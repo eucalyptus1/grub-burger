@@ -1,5 +1,7 @@
 import React from 'react';
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
 
 import Home from './components/Home';
 import Nav from './components/Nav';
@@ -9,8 +11,14 @@ import Cart from './components/Cart';
 import SignupForm from './components/Signup';
 import Menu from './components/Menu'
 
+const client = new ApolloClient({
+  url: "http://localhost:3000/",
+  cache: new InMemoryCache()
+});
+
 const App = () => {
   return (
+    <ApolloProvider client={client}>
     <Router>
       <div>
         <Nav />
@@ -44,8 +52,8 @@ const App = () => {
         </div>
       </div>
     </Router>
+    </ApolloProvider>
   );
 }
-
 
 export default App;

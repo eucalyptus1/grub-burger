@@ -1,11 +1,17 @@
 import React, { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
 
-// import mutations to use instead of api routes
-import { useMutation } from '@apollo/react-hooks';
+// import mutations to use
+import { ApolloProvider, ApolloClient, useMutation, InMemoryCache } from '@apollo/client';
 import { ADD_USER } from '../../utils/mutations';
 import Auth from '../../utils/auth';
 import "../Login/login.css"
+
+const client = new ApolloClient({
+  url: "http://localhost:3000/signup",
+  cache: InMemoryCache()
+})
+
 
 const SignupForm = () => {
   // set initial form state
@@ -20,7 +26,7 @@ const SignupForm = () => {
   const [showAlert, setShowAlert] = useState(false);
 
   // declared the addUser with the useMutation
-  // const [addUser, { error }] = useMutation(ADD_USER);
+  const [addUser, { error }] = useMutation(ADD_USER);
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -57,9 +63,10 @@ const SignupForm = () => {
   };
 
   return (
+    <ApolloProvider client={client}>
     <section className='m-5'>
       <div className=' bg-brown p-3 square rounded-top'>
-        <h3 className='text-center text-light'>Login Here</h3>
+        <h3 className='text-center text-light'>Signup Here</h3>
       </div>
       <div className=' p-3 bg-light square rounded-bottom'>
         <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
@@ -116,9 +123,11 @@ const SignupForm = () => {
             Submit
           </Button>
         </Form>
+
+        {error}
       </div>
     </section>
-
+    </ApolloProvider>
 
   );
 };
