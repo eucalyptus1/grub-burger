@@ -1,11 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import Home from './components/Home';
+import Home from './components/Home/index';
 import Nav from './components/Nav';
 import Menu from './components/Menu/index';
 import About from './components/About';
-import Staff from './components/Staff';
 import Login from './components/Login';
 import Cart from './components/Cart';
 import Appetizers from './components/Menu/Appetizers';
@@ -27,10 +26,6 @@ const App = () => {
               <Route
                 path="/about"
                 element={<About />}
-              />
-              <Route
-                path="/staff"
-                element={<Staff />}
               />
               <Route
                 path="/login"

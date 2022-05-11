@@ -1,4 +1,6 @@
 import React from "react";
+import { Card, Container, Row, Col, ListGroup, ListGroupItem } from "react-bootstrap"
+import appetizer from "../../assets/appetizers/chicken-wings.jpeg"
 
 import { Link } from 'react-router-dom';
 
@@ -11,7 +13,11 @@ function Menu() {
     return (
         <div>
             <ul className="flex-row">
-            <li><Link to="/appetizers">Appetizers</Link></li>
+            
+                        <li><Link to ="/appetizers">Appetizers</Link></li>
+                  
+
+
             <li><Link to="/entrees">Entrees</Link></li>
             <li><Link to="/desserts">Desserts</Link></li>
             <li><Link to="/drinks">Drinks</Link></li>
