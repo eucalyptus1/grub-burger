@@ -17,13 +17,13 @@ function Drinks() {
                     style={{ width: "16.9rem", height:"14rem" }}
                 />
                 <Card.Body>
-                    <Card.Title className="text-center"></Card.Title>
-                    <Card.Text></Card.Text>
+                    <Card.Title className="text-center">Fresh Brewed Sweet Tea</Card.Title>
+                    <Card.Text>This delicious sweet tea is freshly brewed each day </Card.Text>
                 </Card.Body>
                 <ListGroup className="list-group-flush">
-                    <ListGroupItem className="text-center"></ListGroupItem>
+                    <ListGroupItem className="text-center">$3</ListGroupItem>
                 </ListGroup>
-                <Button variant="dark"></Button>
+                <Button variant="dark">Add to cart</Button>
             </Card>
 
             <Card className="p-2" border="dark" style={{ width: "18rem" }}>
@@ -33,13 +33,13 @@ function Drinks() {
                     style={{ width: "16.9rem", height:"14rem" }}
                 />
                 <Card.Body>
-                    <Card.Title className="text-center"></Card.Title>
-                    <Card.Text></Card.Text>
+                    <Card.Title className="text-center">Lemonade</Card.Title>
+                    <Card.Text>Freshly squeezed lemons make a tasty lemonade!</Card.Text>
                 </Card.Body>
                 <ListGroup className="list-group-flush">
                     <ListGroupItem className="text-center"></ListGroupItem>
                 </ListGroup>
-                <Button variant="dark"></Button>
+                <Button variant="dark">Add to cart</Button>
             </Card>
 
             <Card className="p-2" border="dark" style={{ width: "18rem" }}>
@@ -49,13 +49,13 @@ function Drinks() {
                     style={{ width: "16.9rem", height:"14rem" }}
                 />
                 <Card.Body>
-                    <Card.Title className="text-center"></Card.Title>
-                    <Card.Text></Card.Text>
+                    <Card.Title className="text-center">Passion Fruit Martini</Card.Title>
+                    <Card.Text> Fresh passion fruit, passion fruit juice, and passion fruit flavored vodka.</Card.Text>
                 </Card.Body>
                 <ListGroup className="list-group-flush">
                     <ListGroupItem className="text-center"></ListGroupItem>
                 </ListGroup>
-                <Button variant="dark"></Button>
+                <Button variant="dark">Add to cart</Button>
             </Card>
 
         </Col>
@@ -70,13 +70,13 @@ function Drinks() {
                     style={{ width: "16.9rem", height:"14rem" }}
                 />
                 <Card.Body>
-                    <Card.Title className="text-center"></Card.Title>
-                    <Card.Text></Card.Text>
+                    <Card.Title className="text-center">Frozen Strawberry Margarita</Card.Title>
+                    <Card.Text>Strawberry, tequila, and salt/sugar on the rim</Card.Text>
                 </Card.Body>
                 <ListGroup className="list-group-flush">
                     <ListGroupItem className="text-center"></ListGroupItem>
                 </ListGroup>
-                <Button variant="dark"></Button>
+                <Button variant="dark">Add to cart</Button>
             </Card>
 
             <Card className="p-2" border="dark" style={{ width: "18rem" }}>
@@ -86,13 +86,13 @@ function Drinks() {
                     style={{ width: "16.9rem", height:"14rem" }}
                 />
                 <Card.Body>
-                    <Card.Title className="text-center"></Card.Title>
-                    <Card.Text></Card.Text>
+                    <Card.Title className="text-center">House Beer</Card.Title>
+                    <Card.Text>Enjoy a cold house beer.</Card.Text>
                 </Card.Body>
                 <ListGroup className="list-group-flush">
                     <ListGroupItem className="text-center"></ListGroupItem>
                 </ListGroup>
-                <Button variant="dark"></Button>
+                <Button variant="dark">Add to cart</Button>
             </Card>
             
         </Col>

@@ -1,6 +1,11 @@
 import React from "react";
 import { Card, Container, Row, Col, ListGroup, ListGroupItem, Button } from "react-bootstrap"
 import "./menu.css"
+import apple from "../../assets/desserts/apple-pie.webp"
+import brownie from "../../assets/desserts/brownie-sundae.jpeg"
+import oreos from "../../assets/desserts/fried-oreos.webp"
+import milk from "../assets/desserts/milkshake.jpg"
+import strawberry from "../assets/desserts/strawberry-cheesecake.jpg"
 
 function Desserts() {
     return (
@@ -13,7 +18,7 @@ function Desserts() {
         <Card className="p-2" border="dark" style={{ width: "18rem" }}>
                 <Card.Img
                     variant="top"
-                    src={pic}
+                    src={milk}
                     style={{ width: "16.9rem", height:"14rem" }}
                 />
                 <Card.Body>
@@ -29,7 +34,7 @@ function Desserts() {
             <Card className="p-2" border="dark" style={{ width: "18rem" }}>
                 <Card.Img
                     variant="top"
-                    src={pic}
+                    src={brownie}
                     style={{ width: "16.9rem", height:"14rem" }}
                 />
                 <Card.Body>
@@ -45,12 +50,12 @@ function Desserts() {
             <Card className="p-2" border="dark" style={{ width: "18rem" }}>
                 <Card.Img
                     variant="top"
-                    src={pic}
+                    src={oreos}
                     style={{ width: "16.9rem", height:"14rem" }}
                 />
                 <Card.Body>
-                    <Card.Title className="text-center"></Card.Title>
-                    <Card.Text></Card.Text>
+                    <Card.Title className="text-center">Fried Oreos</Card.Title>
+                    <Card.Text>Deep fried Oreo cookies, a Texas State Fair favorite!</Card.Text>
                 </Card.Body>
                 <ListGroup className="list-group-flush">
                     <ListGroupItem className="text-center"></ListGroupItem>
@@ -66,33 +71,33 @@ function Desserts() {
         <Card className="p-2" border="dark" style={{ width: "18rem" }}>
                 <Card.Img
                     variant="top"
-                    src={pic}
+                    src={strawberry}
                     style={{ width: "16.9rem", height:"14rem" }}
                 />
                 <Card.Body>
-                    <Card.Title className="text-center"></Card.Title>
-                    <Card.Text></Card.Text>
+                    <Card.Title className="text-center">Strawberry Cheesecake</Card.Title>
+                    <Card.Text>Light and creamy cheesecake topped with sweet strawberry sauce.</Card.Text>
                 </Card.Body>
                 <ListGroup className="list-group-flush">
                     <ListGroupItem className="text-center"></ListGroupItem>
                 </ListGroup>
-                <Button variant="dark"></Button>
+                <Button variant="dark">Add to Cart</Button>
             </Card>
 
             <Card className="p-2" border="dark" style={{ width: "18rem" }}>
                 <Card.Img
                     variant="top"
-                    src={pic}
+                    src={apple}
                     style={{ width: "16.9rem", height:"14rem" }}
                 />
                 <Card.Body>
-                    <Card.Title className="text-center"></Card.Title>
-                    <Card.Text></Card.Text>
+                    <Card.Title className="text-center">Apple Pie</Card.Title>
+                    <Card.Text>A delicious classic pie filled with apples and topped with a scoop of vanilla ice cream</Card.Text>
                 </Card.Body>
                 <ListGroup className="list-group-flush">
                     <ListGroupItem className="text-center"></ListGroupItem>
                 </ListGroup>
-                <Button variant="dark"></Button>
+                <Button variant="dark">Add to cart</Button>
             </Card>
             
         </Col>
