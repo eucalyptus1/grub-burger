@@ -1,6 +1,11 @@
 import React from "react";
 import { Card, Container, Row, Col, ListGroup, ListGroupItem, Button } from "react-bootstrap";
 import "./menu.css"
+import tea from "../../assets/drinks/sweet-tea.jpg"
+import lemonade from "../../assets/drinks/lemonade.webp"
+import passion from "../../assets/drinks/passion-fruit.jpg"
+import strawberry from "../../assets/drinks/strawberry-marg.jpg"
+import beer from "../../assets/drinks/beer.jpg"
 
 function Drinks() {
     return (
@@ -13,7 +18,7 @@ function Drinks() {
         <Card className="p-2" border="dark" style={{ width: "18rem" }}>
                 <Card.Img
                     variant="top"
-                    src={pic}
+                    src={tea}
                     style={{ width: "16.9rem", height:"14rem" }}
                 />
                 <Card.Body>
@@ -29,7 +34,7 @@ function Drinks() {
             <Card className="p-2" border="dark" style={{ width: "18rem" }}>
                 <Card.Img
                     variant="top"
-                    src={pic}
+                    src={lemonade}
                     style={{ width: "16.9rem", height:"14rem" }}
                 />
                 <Card.Body>
@@ -37,7 +42,7 @@ function Drinks() {
                     <Card.Text>Freshly squeezed lemons make a tasty lemonade!</Card.Text>
                 </Card.Body>
                 <ListGroup className="list-group-flush">
-                    <ListGroupItem className="text-center"></ListGroupItem>
+                    <ListGroupItem className="text-center">$3</ListGroupItem>
                 </ListGroup>
                 <Button variant="dark">Add to cart</Button>
             </Card>
@@ -45,7 +50,7 @@ function Drinks() {
             <Card className="p-2" border="dark" style={{ width: "18rem" }}>
                 <Card.Img
                     variant="top"
-                    src={pic}
+                    src={passion}
                     style={{ width: "16.9rem", height:"14rem" }}
                 />
                 <Card.Body>
@@ -53,7 +58,7 @@ function Drinks() {
                     <Card.Text> Fresh passion fruit, passion fruit juice, and passion fruit flavored vodka.</Card.Text>
                 </Card.Body>
                 <ListGroup className="list-group-flush">
-                    <ListGroupItem className="text-center"></ListGroupItem>
+                    <ListGroupItem className="text-center">$8</ListGroupItem>
                 </ListGroup>
                 <Button variant="dark">Add to cart</Button>
             </Card>
@@ -62,11 +67,11 @@ function Drinks() {
     </Row>
 
     <Row>
-        <Col>
+        <Col className="container-fluid d-flex justify-content-center g-4 card-columns">
         <Card className="p-2" border="dark" style={{ width: "18rem" }}>
                 <Card.Img
                     variant="top"
-                    src={pic}
+                    src={strawberry}
                     style={{ width: "16.9rem", height:"14rem" }}
                 />
                 <Card.Body>
@@ -74,7 +79,7 @@ function Drinks() {
                     <Card.Text>Strawberry, tequila, and salt/sugar on the rim</Card.Text>
                 </Card.Body>
                 <ListGroup className="list-group-flush">
-                    <ListGroupItem className="text-center"></ListGroupItem>
+                    <ListGroupItem className="text-center">$8</ListGroupItem>
                 </ListGroup>
                 <Button variant="dark">Add to cart</Button>
             </Card>
@@ -82,7 +87,7 @@ function Drinks() {
             <Card className="p-2" border="dark" style={{ width: "18rem" }}>
                 <Card.Img
                     variant="top"
-                    src={pic}
+                    src={beer}
                     style={{ width: "16.9rem", height:"14rem" }}
                 />
                 <Card.Body>
@@ -90,7 +95,7 @@ function Drinks() {
                     <Card.Text>Enjoy a cold house beer.</Card.Text>
                 </Card.Body>
                 <ListGroup className="list-group-flush">
-                    <ListGroupItem className="text-center"></ListGroupItem>
+                    <ListGroupItem className="text-center">$5</ListGroupItem>
                 </ListGroup>
                 <Button variant="dark">Add to cart</Button>
             </Card>
