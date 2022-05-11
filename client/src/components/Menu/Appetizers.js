@@ -4,7 +4,7 @@ import "./menu.css"
 import buffalo from "../../assets/appetizers/buffalo-chicken.jpeg"
 import shrimp from "../../assets/appetizers/grilled-shrimp.webp"
 import wings from "../../assets/appetizers/chicken-wings.jpeg"
-import bites from "../assets/appetizers/pepper-bites.jpeg"
+import bites from "../../assets/appetizers/pepper-bites.jpeg"
 
 function Appetizers() {
     return (
@@ -69,7 +69,7 @@ function Appetizers() {
         </Row>
 
         <Row>
-            <Col>
+            <Col className="container-fluid d-flex justify-content-center g-4 card-columns">
             <Card className="p-2" border="dark" style={{ width: "18rem" }}>
                     <Card.Img
                         variant="top"

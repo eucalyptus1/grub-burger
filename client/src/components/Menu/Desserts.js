@@ -2,10 +2,10 @@ import React from "react";
 import { Card, Container, Row, Col, ListGroup, ListGroupItem, Button } from "react-bootstrap"
 import "./menu.css"
 import apple from "../../assets/desserts/apple-pie.webp"
-import brownie from "../../assets/desserts/brownie-sundae.jpeg"
+import brownie from "../../assets/desserts/brownie-sundae.jpg"
 import oreos from "../../assets/desserts/fried-oreos.webp"
-import milk from "../assets/desserts/milkshake.jpg"
-import strawberry from "../assets/desserts/strawberry-cheesecake.jpg"
+import milk from "../../assets/desserts/milkshake.jpg"
+import strawberry from "../../assets/desserts/strawberry-cheesecake.jpg"
 
 function Desserts() {
     return (
@@ -26,7 +26,7 @@ function Desserts() {
                     <Card.Text>Handcrafted milkshake of your choice: Vanilla, Chocolate, Strawberry, Oreo</Card.Text>
                 </Card.Body>
                 <ListGroup className="list-group-flush">
-                    <ListGroupItem className="text-center"></ListGroupItem>
+                    <ListGroupItem className="text-center">$4</ListGroupItem>
                 </ListGroup>
                 <Button variant="dark">Add to cart</Button>
             </Card>
@@ -42,7 +42,7 @@ function Desserts() {
                     <Card.Text>Vanilla ice cream with delicious chocolate brownie toped with chocolate syrup.</Card.Text>
                 </Card.Body>
                 <ListGroup className="list-group-flush">
-                    <ListGroupItem className="text-center"></ListGroupItem>
+                    <ListGroupItem className="text-center">$7</ListGroupItem>
                 </ListGroup>
                 <Button variant="dark">Add to cart</Button>
             </Card>
@@ -58,7 +58,7 @@ function Desserts() {
                     <Card.Text>Deep fried Oreo cookies, a Texas State Fair favorite!</Card.Text>
                 </Card.Body>
                 <ListGroup className="list-group-flush">
-                    <ListGroupItem className="text-center"></ListGroupItem>
+                    <ListGroupItem className="text-center">$7</ListGroupItem>
                 </ListGroup>
                 <Button variant="dark">Add to cart</Button>
             </Card>
@@ -67,7 +67,7 @@ function Desserts() {
     </Row>
 
     <Row>
-        <Col>
+        <Col className="container-fluid d-flex justify-content-center g-4 card-columns">
         <Card className="p-2" border="dark" style={{ width: "18rem" }}>
                 <Card.Img
                     variant="top"
@@ -79,7 +79,7 @@ function Desserts() {
                     <Card.Text>Light and creamy cheesecake topped with sweet strawberry sauce.</Card.Text>
                 </Card.Body>
                 <ListGroup className="list-group-flush">
-                    <ListGroupItem className="text-center"></ListGroupItem>
+                    <ListGroupItem className="text-center">$7</ListGroupItem>
                 </ListGroup>
                 <Button variant="dark">Add to Cart</Button>
             </Card>
@@ -95,7 +95,7 @@ function Desserts() {
                     <Card.Text>A delicious classic pie filled with apples and topped with a scoop of vanilla ice cream</Card.Text>
                 </Card.Body>
                 <ListGroup className="list-group-flush">
-                    <ListGroupItem className="text-center"></ListGroupItem>
+                    <ListGroupItem className="text-center">$5</ListGroupItem>
                 </ListGroup>
                 <Button variant="dark">Add to cart</Button>
             </Card>
